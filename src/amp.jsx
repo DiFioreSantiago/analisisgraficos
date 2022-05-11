@@ -5,14 +5,14 @@ import {Chart} from 'react-google-charts';
 
 const data = [
     ["Librerias", "Performance", "Accessibility","Best Practices","SEO"],
-    ["Google Charts", 45, 98,83,89],
-    ["D3", 46, 98,83,89],
-    ["Echarts", 49, 98,83,89],
-    ["Chart.JS", 50, 98, 83,89],
+    ["Google Charts", 68, 98,83,96],
+    ["D3", 63, 98,83,96],
+    ["Echarts", 70, 98,83,96],
+    ["Chart.JS", 56, 98, 83,96],
 ];
   
 const options = {
-    title: "Analisis de librerias para graficos",
+    title: "Analisis de librerias para graficos en AMP",
     chartArea: { width: "50%" },
     hAxis: {
       title: "Valores promedio",
@@ -23,7 +23,7 @@ const options = {
     },
   };
 
-function GoogleChartAMP() {
+function GoogleChart() {
 return (
     <Chart
     chartType="BarChart"
@@ -35,4 +35,4 @@ return (
 );
 }
 
-export default GoogleChartAMP;
+export default GoogleChart;
